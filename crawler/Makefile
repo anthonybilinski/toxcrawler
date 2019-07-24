@@ -1,5 +1,5 @@
 LIBS = toxcore
-CFLAGS = -std=gnu99 -Wall -ggdb -fstack-protector-all -pthread
+CFLAGS = -std=gnu99 -Wall -ggdb -fstack-protector-all -pthread -O0
 OBJ = main.o util.o
 LDFLAGS = $(shell pkg-config --libs $(LIBS))
 SRC_DIR = ./src
